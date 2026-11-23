@@ -1,6 +1,6 @@
 # AI FDE live sessions
 
-Krish Naik Academy Live Session recordings 4–13. All ten lesson pages and Resources tabs were visited. Folder dates follow the course dates and are corroborated by the date-stamped ZIP names.
+Krish Naik Academy Live Session recordings 4–14. All eleven lesson pages and Resources tabs were visited. Folder dates follow the course dates and are corroborated by the date-stamped ZIP names.
 
 The academy Resources tab lists a ZIP and a VTT transcript for each session. The ZIPs were downloaded and inventoried. Use the lesson links to access the original materials through the academy. The study notes are original prompts based on the lesson titles and archive contents.
 
@@ -16,3 +16,4 @@ The academy Resources tab lists a ZIP and a VTT transcript for each session. The
 | 11 | [2026-11-14](2026-11-14/) | 14 Nov - Advance-python | ZIP inspected, VTT listed |
 | 12 | [2026-11-15](2026-11-15/) | 15 Nov - Advance-python | ZIP inspected, VTT listed |
 | 13 | [2026-11-21](2026-11-21/) | 21 Nov Api-1 | ZIP inspected, VTT listed |
+| 14 | [2026-11-22](2026-11-22/) | 22 Nov FastAPI-2 | ZIP inspected, VTT listed |

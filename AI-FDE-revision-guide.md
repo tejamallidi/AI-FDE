@@ -1,6 +1,6 @@
 # AI FDE Revision Guide
 
-Live recordings 4–13 · October 11–November 21, 2026
+Live recordings 4–14 · October 11–November 22, 2026
 
 Each chapter ends with a short exercise you can do from memory. The dates follow the academy's lesson and attachment dates. The guide is based on the downloaded notebooks and code. The academy transcript links were listed, but Cloud Browser blocked access during this pass, so the guide does not claim transcript coverage.
 
@@ -18,6 +18,7 @@ Each chapter ends with a short exercise you can do from memory. The dates follow
 | [8](#chapter-8--asyncio-fundamentals) | Nov 14 | Asyncio fundamentals |
 | [9](#chapter-9--blocking-work-in-async-applications) | Nov 15 | Blocking work in async applications |
 | [10](#chapter-10--linux-processes-and-fastapi) | Nov 21 | Linux processes and FastAPI |
+| [11](#chapter-11--fastapi-validation-and-dependencies) | Nov 22 | FastAPI validation and dependencies |
 
 ## Chapter 1 — Python variables, types, and collections
 
@@ -144,3 +145,17 @@ Each chapter ends with a short exercise you can do from memory. The dates follow
 **Recall drill:** Build a small work-order API with a health route and one lookup route. Test a successful lookup, an invalid parameter, and an unknown ID. Explain the response for each and how you'd stop the service gracefully.
 
 [Source FastAPI and Linux examples](https://github.com/tejamallidi/AI-FDE/blob/main/2026-11-21/resources.md)
+
+## Chapter 11 — FastAPI validation and dependencies
+
+**November 22 · Recording 14 · FastAPI-2**
+
+- Compare integer path parameters with bounded `Path` and `Query` values. Invalid inputs are rejected during validation. A valid ID missing from the store yields 404.
+- Use a Pydantic request model to validate work-order creation. A PATCH model can use `model_dump(exclude_unset=True)` to preserve omitted fields. Decide explicitly whether a supplied null should clear a field.
+- Declare a public response model to control which fields the API returns. Use `Depends()` to share store access and pagination across endpoints. The header example demonstrates dependency-based checks in a lab.
+
+**Recall drill:** Design a PATCH endpoint for a work order. Explain what happens when the status is omitted, invalid, or valid but the order does not exist.
+
+Source coverage is based on the code in the resource archive. The transcript was listed in the academy and was not reviewed for this chapter.
+
+[Source inventory](2026-11-22/resources.md)
